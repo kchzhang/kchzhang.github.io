@@ -15,14 +15,14 @@ module.exports = {
     smoothScroll: true,
     navbar: true,
     sidebar: {
-      "/tools/": ["", "a"],
+      "/tools/": ["", "data", "regExp", "date"],
       "/snippets/": ["", "array", "broswer", "regular", "date"],
     },
     // 顶部右边栏
     nav: [
       { text: "文档", link: "/tools/" },
       // { text: "Snippets", link: "/snippets/" },
-      // { text: "External", link: "https://google.com" },
+      { text: "GitHub", link: "https://github.com/kchzhang/j4Tools" },
     ],
   },
   // 插件
