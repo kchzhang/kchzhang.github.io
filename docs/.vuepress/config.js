@@ -4,11 +4,9 @@ const base = build ? "/" : "/";
 module.exports = {
   title: "J4Tools",
   description: "J4Tools,JavaScript,tools,js",
-  base, // 项目的根路径
+  base,
   dest: "dist",
-  head: [
-    // 设置 描述 和 关键词
-  ],
+  head: [],
   markdown: {
     lineNumbers: true,
   },
@@ -55,5 +53,12 @@ module.exports = {
     ],
   },
   // 插件
-  plugins: [["vuepress-plugin-code-copy", true]],
+  plugins: [
+    "@vuepress/pwa",
+    {
+      serviceWorker: true,
+      updatePopup: true,
+    },
+    ["vuepress-plugin-code-copy", true],
+  ],
 };
