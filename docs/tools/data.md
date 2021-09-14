@@ -23,9 +23,9 @@ uniq([1, 2, 2]); // [1, 2]
 ## 属性去重
 
 ```js
-import { uniq } from "j4tools";
+import { uniqBy } from "j4tools";
 
-uniqBy([{ a: 1 }, { a: 1 }]); // [{ a: 1 }]
+uniqBy([{ a: 1 }, { a: 1 }], 'a'); // [{ a: 1 }]
 ```
 
 ## 判断为空
@@ -43,3 +43,31 @@ isEmpty([1, 2, 3]); // false
 ::: tip
 没有可枚举属性的对象为空
 :::
+
+## 判断浏览器
+
+```js
+import { isBrowser } from "j4tools";
+
+isBrowser(); // true or false
+```
+
+## 判断设备
+
+```js
+import { deviceType } from "j4tools";
+
+deviceType(); // Mobile or Desktop
+```
+
+## 获取 url 参数
+
+```js
+import { getURLParams } from "j4tools";
+
+getURLParams("google.com"); // {}
+
+getURLParams("http://google.com/page?name=knox&surname=zhang");
+
+// {name: 'knox', surname: 'zhang'}
+```

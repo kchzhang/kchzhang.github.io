@@ -41,3 +41,15 @@ import { regSocialCreditCode } from "j4tools";
 
 regSocialCreditCode("111111"); // false
 ```
+
+## 密码强度
+
+```js
+import { regPasswordStrong } from "j4tools";
+
+regPasswordStrong("Aa@202"); // true
+```
+
+::: tip
+至少 6 位，包括一个大写字母，一个小写字母，一个数字，一个特殊字符
+:::
