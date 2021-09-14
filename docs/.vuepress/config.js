@@ -38,6 +38,10 @@ module.exports = {
           title: "时间格式",
           path: "date",
         },
+        {
+          title: "下载",
+          path: "down",
+        },
       ],
 
       // ["", "data", "regExp", "date"],
