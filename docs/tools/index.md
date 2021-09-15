@@ -13,17 +13,17 @@ $ yarn add j4Tools
 ## Browser
 
 ```js
-import { hello } from "j4Tools";
+import { cloneDeep } from "j4Tools";
 
-hello("hello world");
+cloneDeep(["hello world"]);
 
-// hello world
+// ["hello world"]
 
 // or
 
 // <script src="j4Tools.js"></script>
 
-j4Tools.hello("hello world");
+j4Tools.cloneDeep(["hello world"]);
 ```
 
 ## Node
