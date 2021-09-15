@@ -162,7 +162,7 @@ const data = {
   ],
 };
 
-listToTree(data, "children");
+treeToList(data, "children");
 // 处理 children字段下的子节点
 
 // [

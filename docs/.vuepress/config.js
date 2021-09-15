@@ -55,10 +55,7 @@ module.exports = {
   // 插件
   plugins: [
     "@vuepress/pwa",
-    {
-      serviceWorker: true,
-      updatePopup: true,
-    },
+    "@vuepress/back-to-top",
     ["vuepress-plugin-code-copy", true],
   ],
 };
