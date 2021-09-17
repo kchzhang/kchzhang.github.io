@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /logo.jpeg
 heroText: J4Tools
 tagline: The JavaScript for tools
 actionText: 快速上手 →
