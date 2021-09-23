@@ -12,6 +12,8 @@ features:
     details: 支持输出多模式，CJS，ESM，UMD
   - title: 更小
     details: 支持Tree-shaking，编译时不会增加额外的依赖或使项目的大小膨胀
-footer: MIT Licensed | Copyright © 2021-present Knox zhang
+# footer: MIT Licensed | Copyright © 2021-present Knox zhang
 ---
+
+<SiteFooter/>
 
