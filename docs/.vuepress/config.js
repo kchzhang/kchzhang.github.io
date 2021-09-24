@@ -40,6 +40,10 @@ module.exports = {
           title: "下载",
           path: "down",
         },
+        {
+          title: "cookies",
+          path: "cookies",
+        },
       ],
 
       // ["", "data", "regExp", "date"],
