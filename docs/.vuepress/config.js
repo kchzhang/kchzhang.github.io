@@ -41,7 +41,7 @@ module.exports = {
           path: "down",
         },
         {
-          title: "cookies",
+          title: "Cookie",
           path: "cookies",
         },
       ],
