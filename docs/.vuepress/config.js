@@ -2,8 +2,8 @@ const argv = require("minimist")(process.argv.slice(2));
 const build = argv._[0] || false;
 const base = build ? "/" : "/";
 module.exports = {
-  title: "J4Tools",
-  description: "J4Tools,JavaScript,tools,js",
+  title: "j4tools",
+  description: "j4tools,JavaScript,tools,js",
   base,
   dest: "dist",
   head: [],
@@ -53,7 +53,7 @@ module.exports = {
     nav: [
       { text: "文档", link: "/tools/" },
       // { text: "Snippets", link: "/snippets/" },
-      { text: "GitHub", link: "https://github.com/kchzhang/j4Tools" },
+      { text: "GitHub", link: "https://github.com/kchzhang/j4tools" },
     ],
   },
   // 插件

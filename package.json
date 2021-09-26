@@ -1,7 +1,7 @@
 {
   "name": "kchzhang.github.io",
   "version": "1.0.0",
-  "description": "A docs system for j4Tools",
+  "description": "A docs system for j4tools",
   "main": "index.js",
   "directories": {
     "doc": "docs"

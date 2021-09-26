@@ -3,17 +3,17 @@
 ## 安装
 
 ```bash
-$ npm install j4Tools --save
+$ npm install j4tools --save
 
 # or
-$ yarn add j4Tools
+$ yarn add j4tools
 
 ```
 
 ## Browser
 
 ```js
-import { cloneDeep } from "j4Tools";
+import { cloneDeep } from "j4tools";
 
 cloneDeep(["hello world"]);
 
@@ -21,15 +21,15 @@ cloneDeep(["hello world"]);
 
 // or
 
-// <script src="j4Tools.js"></script>
+// <script src="j4tools.js"></script>
 
-j4Tools.cloneDeep(["hello world"]);
+j4tools.cloneDeep(["hello world"]);
 ```
 
 ## Node
 
 ```js
-const j4Tools = require("j4Tools");
+const j4tools = require("j4tools");
 ```
 
 ## 兼容
