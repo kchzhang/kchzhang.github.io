@@ -94,6 +94,69 @@ getNodePath(data, "3");
 // ]
 ```
 
+## 通过属性查找路径
+
+```js
+import { getNodePath } from "j4tools";
+
+const data = [
+  {
+    id: 1,
+    children: [
+      { id: 2, parentId: 1 },
+      {
+        id: 3,
+        parentId: 1,
+        children: [
+          {
+            id: 4,
+            parentId: 3,
+          },
+        ],
+      },
+    ],
+  },
+];
+
+getNodePath(data, 4);
+
+// [
+//     {
+//         "id": 1,
+//         "children": [
+//             {
+//                 "id": 2,
+//                 "parentId": 1
+//             },
+//             {
+//                 "id": 3,
+//                 "parentId": 1,
+//                 "children": [
+//                     {
+//                         "id": 4,
+//                         "parentId": 3
+//                     }
+//                 ]
+//             }
+//         ]
+//     },
+//     {
+//         "id": 3,
+//         "parentId": 1,
+//         "children": [
+//             {
+//                 "id": 4,
+//                 "parentId": 3
+//             }
+//         ]
+//     },
+//     {
+//         "id": 4,
+//         "parentId": 3
+//     }
+// ]
+```
+
 ## 自定义属性查找路径
 
 ```js
@@ -102,22 +165,21 @@ import { getNodePath } from "j4tools";
 const data = [
   {
     kid: 1,
-
-    children: [
-      { kid: 2, parentId: "1111" },
-      { kid: 3, parentId: "1111" },
+    kchildren: [
+      { kid: 2, kparentId: "1" },
+      { kid: 3, kparentId: "1" },
     ],
   },
 ];
 
 getNodePath(data, "3", {
   idKey: "kid",
-  parentIdKey: "parentId",
-  childrenKey: "children",
+  parentIdKey: "kparentId",
+  childrenKey: "kchildren",
 });
 // [
-//   { kid: '1111', children: [ [Object], [Object] ] },
-//   { kid: 2, parentId: '1111' }
+//   { kid: '1', kchildren: [ [Object], [Object] ] },
+//   { kid: 2, kparentId: '1' }
 // ]
 ```
 
